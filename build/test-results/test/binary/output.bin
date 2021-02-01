@@ -1,0 +1,47 @@
+Request method:	POST
+ERequest URI:	https://inm-test-api.herokuapp.com/empregado/cadastrar
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "admissao": "12/03/2020",
+    "cargo": "Gerente",
+    "comissao": "1.000,00",
+    "cpf": "962.430.628-13",
+    "departamentoId": 1,
+!    "nome": "Ana Laura Peixoto",
+    "salario": "8.000,00",
+    "sexo": "f",
+    "tipoContratacao": "pj"
+}
+HTTP/1.1 401 
+Server: Cowboy
+Connection: keep-alive
+SSet-Cookie: JSESSIONID=4E2D4F7D7367377044B25D4A9C31C990; Path=/; Secure; HttpOnly
+'Www-Authenticate: Basic realm="Realm"
+!X-Content-Type-Options: nosniff
+!X-Xss-Protection: 1; mode=block
+?Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+AStrict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+ Content-Type: application/json
+Transfer-Encoding: chunked
+%Date: Sat, 30 Jan 2021 19:25:30 GMT
+Via: 1.1 vegur
+
+{
+1    "timestamp": "2021-01-30T19:25:30.234+0000",
+    "status": 401,
+    "error": "Unauthorized",
+    "message": "Unauthorized",
+#    "path": "/empregado/cadastrar"
+}

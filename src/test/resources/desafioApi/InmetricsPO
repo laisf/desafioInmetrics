@@ -1,0 +1,24 @@
+#language: pt
+# encoding: utf8
+
+  Funcionalidade: Verificar a aplicacao das requisicoes da documentacao api
+    Cenario: Cadastrar Usuario
+      Dado que acesso a documentacao api "1"
+      Quando executo o endpoint /emprego/cadastrar de Post
+      Entao retorna o codigo de sucesso "200"
+
+    Cenario: Listar Usuario
+      Dado que acesso a documentacao api "2"
+      Quando executo o endpoint /empregado/list/553 de Get
+      Entao lista o "nome do funcionario" com sucesso
+
+    Cenario: Listar Todos os Usuarios
+      Dado que acesso a documentacao api "3"
+      Quando que executo o endpoint /empregado/list_all de Get All
+      Entao mostra a lista com todos os funcionarios e o "condigo de ok"
+
+    Cenario: Alterar Usuario
+      Dado que acesso a documentacao api "4"
+      Quando executo o endpoint /alterar/553 de Put
+      Entao retorna o codigo de sucesso "200"
+
