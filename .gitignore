@@ -1,1 +1,5 @@
-/src/test/resources/
+# Intellij
+.idea/
+*.iml
+*.iws
+
